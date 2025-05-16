@@ -1,40 +1,166 @@
-*{margin:0;
-  padding:0;
-  }
-
+* {
+  margin: 0;
+  padding: 0;
+}
 
 /* [ Loader ] */
-.Loader{}
+.Loader {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  position: relative;
+}
 
-#load_back{}
+#load_back {
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  position: fixed;
+  pointer-events: none;
+  background-color: blue;
+  opacity: 0.2;
+}
 
-#load_logo{}
+#load_logo {
+  background-color: black;
+  height: 20%;
+  width: 20%;
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-#load_bar{}
+.load_bar {
+  position: relative;
+  height: 2%;
+  width: 50%;
+  background-color: red;
+  border-radius: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
 
-#load_text{}
+#load_bar_inner {
+  position: absolute;
+  background-color: white;
+  height: 30%;
+  width: 94%;
+  z-index: 3;
+  transform: translate(3%, 98%);
+  border-radius: 10px;
+}
 
-
+#load_text {
+  position: absolute;
+  transform: translate(0, 100%);
+  width: 100%;
+  text-align: center;
+  color: white;
+}
 
 /* [ Presist ] */
-.Presist{}
+.Presist {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+}
 
-#back{}
+#back {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+}
 
-#top_bar{}
+#top_bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
 
-#bot_bar{}
-
-
+#bot_bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
 
 /* [ Selection ] */
-.Selection{}
+.Selection {
+  display: none; /* Change to block when you want to show it */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
 
-#selectmenu{}
+.selectmenu ul {
+  list-style-type: none;
+}
 
-#select_info{}
+.selectmenu li {
+  margin-bottom: 10px;
+}
 
+.selectmenu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
 
+.selectmenu img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.selectmenu li.disabled a {
+  text-decoration: line-through;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+#select_info {
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+}
 
 /* [ Decoration ] */
-.Decoration{}
+.Decoration {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 30;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  #load_logo {
+    height: 30%;
+    width: 30%;
+  }
+  
+  .load_bar {
+    width: 70%;
+  }
+
+  .selectmenu a {
+    font-size: 16px;
+  }
+}
