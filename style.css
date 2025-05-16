@@ -1,0 +1,40 @@
+*{margin:0;
+  padding:0;
+  }
+
+
+/* [ Loader ] */
+.Loader{}
+
+#load_back{}
+
+#load_logo{}
+
+#load_bar{}
+
+#load_text{}
+
+
+
+/* [ Presist ] */
+.Presist{}
+
+#back{}
+
+#top_bar{}
+
+#bot_bar{}
+
+
+
+/* [ Selection ] */
+.Selection{}
+
+#selectmenu{}
+
+#select_info{}
+
+
+
+/* [ Decoration ] */
+.Decoration{}
