@@ -1,68 +1,54 @@
-<!Doctype HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>V</title>
-      <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/preloads/ficon.ico">
-    </head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="preloads/ficon.ico">
+  </head>
   
   <body>
-    
     <!-- [ LOADER ] -->
     <div class="Loader">
-      
-      <img src="/preloads/back0.png" id="load_back">
-      <img src="/preloads/logo.png" id="load_logo">
+      <img src="preloads/back0.png" id="load_back" alt="Loading background">
+      <img src="preloads/logo.png" id="load_logo" alt="Logo">
       <div class="load_bar">
         <div id="load_bar_inner"></div>
       </div>
-      <p id="load_text"></p>
-      
+      <p id="load_text">loading</p>
     </div>
     
-    <!-- [ Presists ] -->
+    <!-- [ Persists ] -->
     <div class="Presist">
-      <img src="/preloads/back1.png" id="back">
-      
+      <img src="preloads/back1.png" id="back" alt="Background">
       <div id="top_bar"></div>
       <div id="bot_bar"></div>
     </div>
     
-      <!-- [ Select] -->
-     <div class="Selection">
-       
-       <div class="selectmenu">
-         <ul>
-           <li><a href="subpages/Jericho/J_intro.html"><img src="/preloads/Jericho.png" id="select_icon">Jericho</a></li>
-           
-           <s><li><a href="subpages/no97/97_intro.html"><img src="/preloads/97.png" id="select_icon">no.97</a></li></s>
-           
-           <s><li><a href="subpages/Sentinel/S_intro.html"><img src="/preloads/Sentinel.png" id="select_icon">Sentinel</a>a></li></s>
-           
-           <s><li><a href="subpages/Morcant/Mo_intro.html"><img src="/preloads/Morcant.png" id="select_icon">Morcant</a></li></s>
-           
-           <s><li><a href="subpages/Matilda/Ma_intro.html"><img src="/preloads/Matilda.png" id="select_icon">Matilda</a></li></s>
-           
-           <s><li><a href="subpages/Vivian/V_intro.html"><img src="/preloads/Vivian.png" id="select_icon">Vivian</a></li></s>
-         </ul>
-       </div>
-       
-       <p id="select_info">
-        
-       </p>
+    <!-- [ Select] -->
+    <div class="Selection">
+      <nav class="selectmenu">
+        <ul>
+          <li><a href="subpages/Jericho/J_intro.html"><img src="preloads/Jericho.png" id="select_icon" alt="Jericho icon">Jericho</a></li>
+          <li class="disabled"><a href="subpages/no97/97_intro.html"><img src="preloads/97.png" id="select_icon" alt="No.97 icon">no.97</a></li>
+          <li class="disabled"><a href="subpages/Sentinel/S_intro.html"><img src="preloads/Sentinel.png" id="select_icon" alt="Sentinel icon">Sentinel</a></li>
+          <li class="disabled"><a href="subpages/Morcant/Mo_intro.html"><img src="preloads/Morcant.png" id="select_icon" alt="Morcant icon">Morcant</a></li>
+          <li class="disabled"><a href="subpages/Matilda/Ma_intro.html"><img src="preloads/Matilda.png" id="select_icon" alt="Matilda icon">Matilda</a></li>
+          <li class="disabled"><a href="subpages/Vivian/V_intro.html"><img src="preloads/Vivian.png" id="select_icon" alt="Vivian icon">Vivian</a></li>
+        </ul>
+      </nav>
       
+      <p id="select_info"></p>
     </div> 
     
-    
-      <!-- [ Decoration ] -->
+    <!-- [ Decoration ] -->
     <div class="Decoration">
     </div>
     
     <!-- [ Music ] -->
-    <audio class="Music>
-      <source>
+    <audio hidden class="Music">
+      <source src="your-music-file.mp3" type="audio/mpeg">
     </audio>
-    
   </body>
-  
-  </html>
+</html>
